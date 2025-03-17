@@ -1,7 +1,7 @@
 import "../App.css";
 import { Link, NavLink } from "react-router";
-import { IoLanguage } from "react-icons/io5";
-import { IoMoon } from "react-icons/io5";
+// import { IoLanguage } from "react-icons/io5";
+// import { IoMoon } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 import { MdCancel } from "react-icons/md";
 import { useState } from "react";
