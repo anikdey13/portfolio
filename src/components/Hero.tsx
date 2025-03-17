@@ -43,7 +43,7 @@ export const Hero = () => {
       </div>
       {/* Links */}
       <div>
-        <ul className="w-full flex justify-around gap-4 text-white">
+        <ul className="w-full flex justify-around md:gap-4 text-white">
           <li>
             <Link to="/" className="flex items-center gap-2">
               <FaJsSquare size={20} />

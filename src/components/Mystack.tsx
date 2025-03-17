@@ -1,31 +1,19 @@
-import { RiJavascriptFill, RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { BiLogoTypescript } from "react-icons/bi";
-
+import { Stack } from "./Stack";
+import { lang, frontend } from "../data/StackData";
 
 export const Mystack = () => {
   return (
     <section className="bg-[#09090B] text-white py-8">
-      <div className="w-[80%] m-auto flex justify-between gap-4">
-        <div className="pl-16">
+      <div className="w-[80%] m-auto md:flex justify-between">
+        {/* section title */}
+        <div className="w-full text-left mb-4 md:w-[40%]">
           <h1 className="text-xl font-semibold">My Stack</h1>
         </div>
-        <div className="flex gap-4">
-          <button className="flex gap-2 items-center border-1 rounded-4xl px-2 font-light">
-            <RiJavascriptFill color="yellow" />
-            Javascript
-          </button>
-          <button className="flex gap-2 items-center border-1 rounded-4xl px-2 font-light">
-            <BiLogoTypescript color="skyBlue" />
-            Typescript
-          </button>
-          <button className="flex gap-2 items-center border-1 rounded-4xl px-2 font-light">
-          <RiReactjsFill color="skyBlue" />
-            React
-          </button>
-          <button className="flex gap-2 items-center border-1 rounded-4xl px-2 font-light">
-          <RiTailwindCssFill color="skyBlue" />
-            Tailwindcss
-          </button>
+        {/* section details */}
+        <div className="w-full text-justify md:w-[60%]">
+          {/* Stack Group */}
+          <Stack title="Languages" stack={lang} />
+          <Stack title="Frontend" stack={frontend} />
         </div>
       </div>
     </section>
