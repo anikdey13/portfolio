@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import profile from "../assets/profile.png";
+// import profile from "../assets/profile.png";
+// import profile from "../assets/icpc.png";
+import profile from "../assets/Batman.jpeg";
 import { FaJsSquare } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -26,7 +28,7 @@ export const Hero = () => {
       <div className="w-full flex justify-center">
         <button
         
-         className="flex gap-2 items-center justify-center mt-4 mb-8 border-1 px-4 py-2 rounded-3xl bg-gray-900 text-white">
+         className="flex gap-2 items-center justify-center mt-4 mb-8 border-1 px-4 py-2 rounded-3xl bg-gray-900 text-white ">
           <motion.span
           animate={{scale: 1.3, opacity: 0.3}}
           transition={{
@@ -43,7 +45,7 @@ export const Hero = () => {
       </div>
       {/* Links */}
       <div>
-        <ul className="w-full flex justify-around md:gap-4 text-white">
+        <ul className="w-full flex flex-col items-center gap-2 md:flex-row justify-around md:gap-4 text-white">
           <li>
             <Link to="/" className="flex items-center gap-2">
               <FaJsSquare size={20} />

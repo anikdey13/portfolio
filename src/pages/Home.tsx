@@ -4,6 +4,8 @@ import { Hero } from "../components/Hero"
 import { Header } from "../components/Header"
 import { About } from "../components/About"
 import { Mystack } from "../components/Mystack"
+import { Education } from "../components/Education"
+import { Footer } from "../components/Footer"
 export const Home = () => {
   return (
     <section>
@@ -13,6 +15,8 @@ export const Home = () => {
       </Header>
       <About/>
       <Mystack/>
+      <Education/>
+      <Footer/>
        
     </section>
   )

@@ -1,20 +1,19 @@
-
 // import { lang } from "../data/StackData";
 // import { frontend } from "../data/StackData";
 
 import { ReactNode } from "react";
 
 type stack = {
-    lang: string,
-    icon: ReactNode
-}
+  lang: string;
+  icon: ReactNode;
+};
 
 interface PropsType {
-  title: string,
-  stack: stack[]
+  title: string;
+  stack: stack[];
 }
 
-export const Stack = ({ title, stack}: PropsType) => {
+export const Stack = ({ title, stack }: PropsType) => {
   return (
     <>
       {/* Stack Group */}
@@ -25,7 +24,10 @@ export const Stack = ({ title, stack}: PropsType) => {
         <div className="flex gap-4 items-center flex-wrap">
           {stack.map((stack) => {
             return (
-              <button key={Math.random()} className="flex gap-2 items-center border-1 rounded-4xl px-2 font-light text-sm">
+              <button
+                key={Math.random()}
+                className="flex gap-2 bg-[#18181b] items-center border-1 rounded-4xl px-2 font-light text-sm transition-all hover:bg-[#27272a]"
+              >
                 {stack.icon}
                 {stack.lang}
               </button>

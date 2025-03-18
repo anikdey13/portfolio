@@ -34,7 +34,7 @@ export const Navbar = () => {
   return (
     
     <>
-      <div className="sticky top-2 left-0 backdrop-blur-2xl shadow-white/5 bg-white/5 w-full flex items-center justify-between h-12 px-12 rounded-full text-white ">
+      <div className="sticky top-2 left-0 backdrop-blur-2xl shadow-white/5 bg-white/5 w-full flex items-center justify-between h-12 px-12 rounded-full text-white z-50">
         {/* Logo */}
         <div>
           <Link to="/">Anik Dey</Link>
