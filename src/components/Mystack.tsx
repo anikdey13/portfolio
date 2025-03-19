@@ -1,5 +1,5 @@
 import { Stack } from "./Stack";
-import { lang, frontend } from "../data/StackData";
+import { lang, frontend, backend, others } from "../data/StackData";
 
 export const Mystack = () => {
   return (
@@ -14,6 +14,8 @@ export const Mystack = () => {
           {/* Stack Group */}
           <Stack title="Languages" stack={lang} />
           <Stack title="Frontend" stack={frontend} />
+          <Stack title="Backend" stack={backend} />
+          <Stack title="Others" stack={others} />
         </div>
       </div>
     </section>

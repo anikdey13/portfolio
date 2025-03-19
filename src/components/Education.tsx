@@ -16,7 +16,7 @@ export const Education = () => {
                 <h1 className="font-semibold">Secondary School Certificate(SSC)</h1>
                 <p className="font-light">2017-2019</p>
                 <p className="font-light">Sylhet Technical School And College, Sylhet.</p>
-                <p className="font-light">CGPA: 3.40 out of 4.00</p>
+                <p className="font-light">CGPA: 3.60 out of 5.00</p>
             </div>
             <div></div>
         </div>

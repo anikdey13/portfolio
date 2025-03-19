@@ -1,5 +1,7 @@
 # 🙎‍♂️Portfolio Website
 
+### This is my personal portfolio website
+
 ## Technology Used
 - Language : Typescript
 - Framework: React , Tailwind
@@ -12,3 +14,4 @@
 | ------------- | --------------- |
 | Background-Color = #fff | Background-Color = #000 |
 | Text-color = #000 | Text-Color = #FFF |
+

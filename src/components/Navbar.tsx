@@ -1,20 +1,24 @@
 import "../App.css";
 import { Link, NavLink } from "react-router";
-// import { IoLanguage } from "react-icons/io5";
-// import { IoMoon } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
-import { MdCancel } from "react-icons/md";
+import { MdCancel, MdWbSunny } from "react-icons/md";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { IoLanguage, IoMoon } from "react-icons/io5";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [darkmode, setDarkmode] = useState(false);
+  const toggleDarkmode = () => {
+    setDarkmode(!darkmode);
+  };
   const toggleNav = () => {
     setNav(!nav);
   };
   const closeNav = () => {
     setNav(!nav);
   };
+
   const menuVarients = {
     open: {
       x: 0,
@@ -32,9 +36,8 @@ export const Navbar = () => {
     },
   };
   return (
-    
     <>
-      <div className="sticky top-2 left-0 backdrop-blur-2xl shadow-white/5 bg-white/5 w-full flex items-center justify-between h-12 px-12 rounded-full text-white z-50">
+      <div className="fixed top-2 w-full backdrop-blur-2xl shadow-white/5 bg-white/5  flex items-center justify-between h-12 px-12 rounded-full text-white z-50 md:w-[80%] m-auto">
         {/* Logo */}
         <div>
           <Link to="/">Anik Dey</Link>
@@ -58,10 +61,12 @@ export const Navbar = () => {
         </nav>
 
         {/* Dark Mode and language Button */}
-        {/* <div className="flex gap-4">
-            <IoLanguage size={25} />
-            <IoMoon size={25} />
-          </div> */}
+        <div className="flex gap-4">
+          <IoLanguage size={25} />
+          <div onClick={toggleDarkmode}>
+            {darkmode ? <MdWbSunny size={25} /> : <IoMoon size={25} />}
+          </div>
+        </div>
         {/* Mobile Menu btn */}
         <div onClick={toggleNav} className="md:hidden z-50">
           {nav ? <MdCancel size={30} /> : <FaBars size={30} />}

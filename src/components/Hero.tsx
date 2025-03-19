@@ -13,11 +13,11 @@ export const Hero = () => {
   return (
     <section className="text-center">
       {/* Image */}
-      <div className="w-full flex items-center justify-center py-12">
+      <div className="w-full flex items-center justify-center py-10">
         <img
           src={profile}
           alt="profile"
-          className="h-[200px] w-[200px] rounded-full border-2 bg-white"
+          className="h-[200px] w-[200px] rounded-full border-2 mt-8 bg-white"
         />
       </div>
       {/* Name */}
@@ -45,22 +45,22 @@ export const Hero = () => {
       </div>
       {/* Links */}
       <div>
-        <ul className="w-full flex flex-col items-center gap-2 md:flex-row justify-around md:gap-4 text-white">
+        <ul className="w-full flex flex-col items-center gap-4 md:flex-row justify-around md:gap-4 text-white">
           <li>
             <Link to="/" className="flex items-center gap-2">
-              <FaJsSquare size={20} />
+              <FaJsSquare size={20} color="yellow" />
               Mern Stack Dev
             </Link>
           </li>
           <li>
             <Link to="/" className="flex items-center gap-2">
-              <FaLocationDot />
+              <FaLocationDot color="red"/>
               Sylhet, Bangladesh
             </Link>
           </li>
           <li>
             <Link to="/" className="flex items-center gap-2">
-              <FaLinkedin size={20} />
+              <FaLinkedin size={20} color="#0c64c5" />
               LinkedIn
             </Link>
           </li>
