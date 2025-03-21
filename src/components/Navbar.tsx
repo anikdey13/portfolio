@@ -36,7 +36,7 @@ export const Navbar = () => {
     },
   };
   return (
-    <>
+    <section className="w-[80%] m-auto">
       <div className="fixed top-2 w-full backdrop-blur-2xl shadow-white/5 bg-white/5  flex items-center justify-between h-12 px-12 rounded-full text-white z-50 md:w-[80%] m-auto">
         {/* Logo */}
         <div>
@@ -52,7 +52,7 @@ export const Navbar = () => {
               <NavLink to="/">About</NavLink>
             </li>
             <li>
-              <NavLink to="/">Projects</NavLink>
+              <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
               <NavLink to="/">Contact</NavLink>
@@ -101,6 +101,6 @@ export const Navbar = () => {
           </ul>
         </motion.div>
       </div>
-    </>
+    </section>
   );
 };

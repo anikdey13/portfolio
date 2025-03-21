@@ -1,23 +1,22 @@
-import { Navbar } from "../components/Navbar"
+// import { Navbar } from "../components/Navbar"
+// import { Footer } from "../components/Footer"
+import { Header } from "../components/Header"
+import { Hero } from "../components/Hero"
 import "../App.css"
 import "../index.css"
-import { Hero } from "../components/Hero"
-import { Header } from "../components/Header"
 import { About } from "../components/About"
 import { Mystack } from "../components/Mystack"
 import { Education } from "../components/Education"
-import { Footer } from "../components/Footer"
 export const Home = () => {
   return (
     <section>
       <Header>
-        <Navbar/>
         <Hero/>
       </Header>
       <About/>
       <Mystack/>
       <Education/>
-      <Footer/>
+      {/* <Footer/> */}
        
     </section>
   )

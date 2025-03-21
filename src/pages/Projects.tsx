@@ -1,6 +1,6 @@
 
 export const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className="h-screen py-16 bg-black text-white">Projects</div>
   )
 }
